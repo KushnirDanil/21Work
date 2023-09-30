@@ -1,0 +1,37 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: burlywood;
+}
+
+main div {
+  position: relative;
+  width: 100px;
+  height: 130px;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+p{
+  position: absolute;
+  animation: 2s linear infinite p1anim, 2s linear infinite p2anim;
+  font-size: 20px;
+}
+
+@keyframes p1anim{
+  0%, 100%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(200px);
+  }  
+}
+@keyframes p2anim{
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }  
+}
